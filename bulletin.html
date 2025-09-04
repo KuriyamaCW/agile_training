@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>交流広場 - ペーパードライバー安心教習</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap">
+    <style>
+        body {
+            background: #f6fbfe;
+            font-family: 'Noto Sans JP', sans-serif;
+            color: #334;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #8ecae6;
+            color: #fff;
+            padding: 26px 0 18px 0;
+            text-align: center;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+        header h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        main {
+            max-width: 480px;
+            margin: 24px auto 0 auto;
+            padding: 0 20px;
+        }
+        .nick-form {
+            background: #eaf7fd;
+            padding: 15px 18px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .nick-form label {
+            font-weight: bold;
+        }
+        .nick-form input[type="text"] {
+            font-size: 1rem;
+            padding: 5px 12px;
+            border-radius: 8px;
+            border: 1px solid #b5d3e7;
+            width: 140px;
+        }
+        .nick-form input[type="submit"] {
+            padding: 5px 13px;
+            border-radius: 7px;
+            border: none;
+            background: #8ecae6;
+            color: white;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-left: 3px;
+            cursor: pointer;
+        }
+        .board-list {
+            background: #fff;
+            border-radius: 18px;
+            padding: 20px 14px;
+            box-shadow: 0 2px 10px rgba(160,180,200,0.13);
+        }
+        .board-list h3 {
+            font-size: 1.1rem;
+            color: #274770;
+            margin-bottom: 10px;
+        }
+        .board-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 13px 0;
+            border-bottom: 1px solid #e1f1f7;
+            text-decoration: none;
+            color: #2a4464;
+            font-size: 1.08rem;
+            font-weight: 700;
+            transition: background 0.2s;
+        }
+        .board-link img {
+            width: 32px;
+        }
+        .board-link:last-child {
+            border-bottom: none;
+        }
+        .board-link:hover {
+            background: #e3f2fd;
+            border-radius: 8px;
+        }
+        @media (max-width: 600px) {
+            main { padding: 8px; }
+            .board-list { padding: 12px 4px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>ペーパードライバー交流広場</h2>
+        <div style="font-size:0.98em;">安心・匿名で参加できます</div>
+    </header>
+    <main>
+        <form class="nick-form" action="#" method="post">
+            <label for="nickname">ニックネーム：</label>
+            <input type="text" id="nickname" name="nickname" maxlength="12" placeholder="好きな名前">
+            <input type="submit" value="設定">
+        </form>
+        <section class="board-list">
+            <h3>掲示板を選ぶ</h3>
+            <a class="board-link" href="board-main.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/554/554909.png" alt="メイン">
+                全員参加のメイン掲示板
+            </a>
+            <a class="board-link" href="board-parking.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/690/690923.png" alt="駐車">
+                駐車が苦手な人の掲示板
+            </a>
+            <a class="board-link" href="board-highway.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/3079/3079147.png" alt="高速道路">
+                高速道路が不安な人の掲示板
+            </a>
+        </section>
+    </main>
+</body>
+</html>
