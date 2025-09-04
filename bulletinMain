@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>メイン掲示板 - ペーパードライバー交流広場</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap">
+    <style>
+        body {
+            background: #f6fbfe;
+            font-family: 'Noto Sans JP', sans-serif;
+            color: #334;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #8ecae6;
+            color: #fff;
+            padding: 26px 0 18px 0;
+            text-align: center;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+        header h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        main {
+            max-width: 480px;
+            margin: 24px auto 0 auto;
+            padding: 0 20px;
+        }
+        .board-title {
+            font-size: 1.1rem;
+            margin: 18px 0 10px 0;
+            color: #28556b;
+        }
+        form.post-form {
+            background: #eaf7fd;
+            padding: 15px 14px;
+            border-radius: 13px;
+            margin-bottom: 26px;
+        }
+        form.post-form label {
+            font-weight: bold;
+        }
+        form.post-form textarea {
+            width: 98%;
+            height: 60px;
+            border-radius: 10px;
+            border: 1px solid #b5d3e7;
+            font-size: 1rem;
+            margin-top: 6px;
+            padding: 7px 10px;
+            resize: vertical;
+        }
+        form.post-form input[type="submit"] {
+            padding: 5px 13px;
+            border-radius: 7px;
+            border: none;
+            background: #8ecae6;
+            color: white;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-top: 7px;
+            cursor: pointer;
+        }
+        .post-list {
+            margin-top: 8px;
+        }
+        .post {
+            background: #fff;
+            border-radius: 13px;
+            box-shadow: 0 2px 7px rgba(180,180,200,0.12);
+            padding: 10px 13px;
+            margin-bottom: 13px;
+            position: relative;
+        }
+        .post .user {
+            color: #2070b5;
+            font-weight: 700;
+            font-size: 0.97em;
+        }
+        .post .time {
+            color: #8cb6ce;
+            font-size: 0.83em;
+            position: absolute;
+            top: 10px;
+            right: 14px;
+        }
+        @media (max-width: 600px) {
+            main { padding: 8px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>全員参加のメイン掲示板</h2>
+        <div style="font-size:0.98em;"><a href="community-list.html" style="color:#fff;text-decoration:underline;">← 掲示板一覧へ戻る</a></div>
+    </header>
+    <main>
+        <div class="board-title">
+            初心者歓迎！何でも相談や意見交換ができます。
+        </div>
+
+        <form class="post-form" action="#" method="post">
+            <label for="msg">投稿する</label><br>
+            <textarea id="msg" name="msg" maxlength="280" placeholder="運転の悩みや共有したいことを書いてください"></textarea><br>
+            <input type="submit" value="投稿">
+        </form>
+        
+        <section class="post-list">
+            <div class="post">
+                <span class="user">駆け出しドライバー</span>
+                <span class="time">2024/06/01 12:31</span>
+                <div>ひさしぶりの運転で、左折のタイミングが毎回不安です。コツがあれば教えてください！</div>
+            </div>
+            <div class="post">
+                <span class="user">ココア</span>
+                <span class="time">2024/06/01 12:35</span>
+                <div>@駆け出しドライバーさん<br>わかります…！私は車体が通る分のスペースと対向車の距離を意識しています。</div>
+            </div>
+            <!-- 他にも投稿例を追加OK -->
+        </section>
+    </main>
+</body>
+</html>
