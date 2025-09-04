@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ペーパードライバー安心教習アプリ</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap">
+    <style>
+        body {
+            background: #f6fbfe;
+            font-family: 'Noto Sans JP', sans-serif;
+            color: #334;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #8ecae6;
+            color: #fff;
+            padding: 30px 0 20px 0;
+            text-align: center;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+        header img {
+            width: 64px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        main {
+            max-width: 480px;
+            margin: 30px auto 0 auto;
+            padding: 0 20px;
+        }
+        .section-btns {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-top: 35px;
+        }
+        .big-btn {
+            display: flex;
+            align-items: center;
+            padding: 18px 20px;
+            border-radius: 18px;
+            background: #fff;
+            border: 2px solid #a9d6e5;
+            box-shadow: 0 2px 8px rgba(150,180,200,0.15);
+            text-decoration: none;
+            color: #274770;
+            font-size: 1.2rem;
+            font-weight: 700;
+            transition: background 0.2s;
+        }
+        .big-btn:hover {
+            background: #e3f2fd;
+        }
+        .big-btn img {
+            width: 38px;
+            margin-right: 16px;
+        }
+        .catchcopy {
+            margin-top: 24px;
+            font-size: 1.15rem;
+            color: #54728c;
+        }
+        .community-info {
+            margin-top: 40px;
+            background: #eaf7fd;
+            padding: 18px;
+            border-radius: 16px;
+            text-align: center;
+            font-size: 1rem;
+            color: #476483;
+        }
+        @media (max-width: 600px) {
+            main {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://cdn.pixabay.com/photo/2014/04/03/10/29/car-312601_1280.png" alt="アプリロゴ:やさしい車のイラスト">
+        <h1>ペーパードライバー安心教習</h1>
+        <div class="catchcopy">もう怖くない、一緒に運転の自信を取り戻そう。</div>
+    </header>
+    <main>
+        <div class="section-btns">
+            <a href="#online-lessons" class="big-btn">
+                <img src="https://cdn-icons-png.flaticon.com/512/252/252035.png" alt="講習アイコン">
+                オンライン講習を受ける
+            </a>
+            <a href="#community-board" class="big-btn">
+                <img src="https://cdn-icons-png.flaticon.com/512/684/684809.png" alt="交流アイコン">
+                ペーパードライバー交流広場
+            </a>
+        </div>
+        <div class="community-info">
+            <span>運転に不安な方・同じ悩みを持つ人同士で<br>自由に相談・情報交換できます！</span>
+        </div>
+    </main>
+</body>
+</html>
